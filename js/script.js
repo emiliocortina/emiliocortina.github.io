@@ -1,18 +1,27 @@
-var logo_white = "resources/logos/firma_white.svg";
-var logo_dark = "resources/logos/firma_grey.svg";
+var logo_white = "/resources/logos/firma_white.svg";
+var logo_dark = "/resources/logos/firma_grey.svg";
 
-var burger_white = "resources/logos/burger_thin.svg"
-var burger_dark = "resources/logos/burger_grey.svg"
+var burger_white = "/resources/logos/burger_thin.svg"
+var burger_dark = "/resources/logos/burger_grey.svg"
 
 
 class StyleManager {
+
+    constructor() {
+        this.transparentNav = true;
+    }
+
+    setTransparency(transparency) {
+        this.transparentNav = transparency;
+        this.setStyle();
+    }
 
     hideMenu() {
         $(".menu").hide(300);
     }
 
     toggleMenu() {
-        $(".menu").toggle(300);;
+        $(".menu").toggle(300);
         this.styleScrolling();
     }
 
@@ -28,7 +37,7 @@ class StyleManager {
     }
 
     setStyle() {
-        if ($(window).scrollTop() <= 155) {
+        if ($(window).scrollTop() <= 155 && this.transparentNav) {
             this.styleTop();
         }
         else {
@@ -47,7 +56,8 @@ class StyleManager {
         $('nav').removeClass('black');
         $("#logo-img").attr("src", logo_white);
         $("#burger-button").attr("src", burger_white);
-        $(".headerTitle").css('opacity', 1);
+         $(".headerTitle").css('opacity', 1);
+        //$(".headerTitle").show();
     }
 
     styleScrolling() {
@@ -55,16 +65,16 @@ class StyleManager {
         $("#logo-img").attr("src", logo_dark);
         $("#burger-button").attr("src", burger_dark);
         $(".logo-text").css('opacity', '1');
-        $(".headerTitle").css('opacity', 0);
+         $(".headerTitle").css('opacity', 0);
+        //$(".headerTitle").hide();
     }
-    
+
 }
 
 var styleManager = new StyleManager();
 
 $(document).ready(function () {
     $("#burger-button").on("click", function () {
-        console.log("HOLA");
         styleManager.toggleMenu();
     });
     styleManager.resizeMenu();
