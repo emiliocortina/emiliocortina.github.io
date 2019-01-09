@@ -1,8 +1,8 @@
-var logo_white = "/emilio_website/resources/logos/firma_white.svg";
-var logo_dark = "/emilio_website/resources/logos/firma_grey.svg";
+var logo_white = "../resources/logos/firma_white.svg";
+var logo_dark = "../resources/logos/firma_grey.svg";
 
-var burger_white = "/emilio_website/resources/logos/burger_thin.svg"
-var burger_dark = "/emilio_website/resources/logos/burger_grey.svg"
+var burger_white = "../resources/logos/burger_thin.svg"
+var burger_dark = "../resources/logos/burger_grey.svg"
 
 
 class StyleManager {
@@ -40,7 +40,7 @@ class StyleManager {
         if ($(window).scrollTop() <= 155 && this.transparentNav) {
             this.styleTop();
         }
-        else {
+        else if (!this.scrolling){
             this.styleScrolling();
         }
     }
@@ -56,8 +56,8 @@ class StyleManager {
         $('nav').removeClass('black');
         $("#logo-img").attr("src", logo_white);
         $("#burger-button").attr("src", burger_white);
-         $(".headerTitle").css('opacity', 1);
-        //$(".headerTitle").show();
+        $(".headerTitle").css('opacity', 1);
+        this.scrolling=false;
     }
 
     styleScrolling() {
@@ -65,8 +65,8 @@ class StyleManager {
         $("#logo-img").attr("src", logo_dark);
         $("#burger-button").attr("src", burger_dark);
         $(".logo-text").css('opacity', '1');
-         $(".headerTitle").css('opacity', 0);
-        //$(".headerTitle").hide();
+        $(".headerTitle").css('opacity', 0);
+        this.scrolling=true;
     }
 
 }

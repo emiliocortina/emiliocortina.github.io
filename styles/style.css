@@ -112,7 +112,6 @@ body {
     word-spacing: 1em;
 }
 
-@media(min-width: 1280px) {}
 
 @media(max-width: 786px) {
     .navbarWrapper {
@@ -185,7 +184,10 @@ body {
 
 @font-face {
     font-family: 'Kano';
-    /*a name to be used later*/
     src: url('../fonts/Kano.otf');
-    /*URL to font*/
+}
+
+@font-face {
+    font-family: 'CircularStd';
+    src: url('../fonts/CircularStd-Black.otf');
 }
