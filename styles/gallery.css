@@ -39,12 +39,11 @@ header {
 
 .description{
     text-align: center;
-    /* margin-bottom: 2em; */
 }
 
 .imageCard {
-    width: 30vw;
-    margin: 3em 1em;
+    width: 16em;
+    margin: 1em;
     padding: 1em;
     padding-bottom: 0;
     box-shadow: 0px 0px 8px rgba(32, 32, 32, 0.425);
@@ -82,7 +81,7 @@ header {
 }
 
 .videoCard video{
-    width: 100%;
+    width: 37.5em;
     border-radius: 3px;
 }
 
@@ -95,17 +94,14 @@ header {
     .content {
         padding: 2.5em 15vw;
     }
-    .imageCard {
-        width: 25vw;
-        margin: 2em;
-    }
 }
 
 @media(max-width: 786px) {
     .videoCard video{
         width: 80vw;
     }
-    .imageCard {
-        width: 60vw;
+
+    .imageCard {
+        margin: 2em 1em;
     }
 }
