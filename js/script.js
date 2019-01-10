@@ -1,8 +1,8 @@
-var logo_white = "../resources/logos/firma_white.svg";
-var logo_dark = "../resources/logos/firma_grey.svg";
+var logo_white = "/resources/logos/firma_white.svg";
+var logo_dark = "/resources/logos/firma_grey.svg";
 
-var burger_white = "../resources/logos/burger_thin.svg"
-var burger_dark = "../resources/logos/burger_grey.svg"
+var burger_white = "/resources/logos/burger_thin.svg"
+var burger_dark = "/resources/logos/burger_grey.svg"
 
 
 class StyleManager {
