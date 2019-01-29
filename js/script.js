@@ -9,6 +9,20 @@ class StyleManager {
 
     constructor() {
         this.transparentNav = true;
+        this.logoTop = logo_white;
+        this.logoScrolling = logo_dark;
+        this.burgerTop = burger_white;
+        this.burgerScrolling = burger_dark;
+    }
+
+    setDarkMode(){
+        this.logoScrolling = logo_white;
+        this.burgerScrolling = burger_white;
+    }
+
+    setLightMode(){
+        this.logoScrolling = logo_dark;
+        this.burgerScrolling = burger_dark;
     }
 
     setTransparency(transparency) {
@@ -54,22 +68,23 @@ class StyleManager {
             }
         }
         $('nav').removeClass('black');
-        $("#logo-img").attr("src", logo_white);
-        $("#burger-button").attr("src", burger_white);
+        $("#logo-img").attr("src", this.logoTop);
+        $("#burger-button").attr("src", this.burgerTop);
         $(".headerTitle").css('opacity', 1);
         this.scrolling=false;
     }
 
     styleScrolling() {
         $('nav').addClass('black');
-        $("#logo-img").attr("src", logo_dark);
-        $("#burger-button").attr("src", burger_dark);
+        $("#logo-img").attr("src", this.logoScrolling);
+        $("#burger-button").attr("src", this.burgerScrolling);
         $(".logo-text").css('opacity', '1');
         $(".headerTitle").css('opacity', 0);
         this.scrolling=true;
     }
-
 }
+
+
 
 var styleManager = new StyleManager();
 

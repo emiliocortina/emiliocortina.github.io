@@ -2,6 +2,7 @@
     --main-background-color: rgb(32, 32, 32);
     --text-color: white;
     --secondary-text-color: #dbdbdb;
+    --color-guay: #0E6D80;
 }
 
 html {
@@ -12,13 +13,24 @@ header {
     margin: 15vh;
 }
 
+.navbar.black{
+    background:  rgb(43, 43, 43);
+    color: #ffffff;
+    border: none;
+    box-shadow: 0px 0px 8px rgb(26, 26, 26);
+}
+
+.navbar.black .menu ul li a {
+    color: #ffffff;
+    text-shadow: none;
+}
+
 .content {
     font-family: 'Kano';
     background-color: var(--main-background-color);
     color: var(--text-color);
     padding: 2.5em;
     font-size: 1.2em;
-    
 }
 
 .photosWrapper{
