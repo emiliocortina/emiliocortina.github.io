@@ -13,6 +13,18 @@ header {
     margin: 15vh;
 }
 
+footer {
+    text-align: center;
+    font-family: 'Kano';
+    color: var(--text-color);
+    margin: 15vh 0 10vh 0;
+}
+
+footer p .year {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: lighter;
+}
+
 .navbar.black{
     background:  rgb(43, 43, 43);
     color: #ffffff;
@@ -58,9 +70,11 @@ header {
     margin: 1em;
     padding: 1em;
     padding-bottom: 0;
-    box-shadow: 0px 0px 8px rgba(32, 32, 32, 0.425);
+    /* box-shadow: 0px 0px 8px rgba(32, 32, 32, 0.425); */
+    box-shadow: 0px 0px 8px rgb(26, 26, 26);
     border-radius: 3px;
-    background-color: #3b3b3b;
+    /* background-color: #3b3b3b; */
+    background-color: rgb(43, 43, 43);
     color: var(--text-color);
 }
 
@@ -84,17 +98,16 @@ header {
 }
 
 .videoCard {
-    padding: 0.6em;
     margin: 3em 1em;
-    background-color: #3b3b3b;
-    box-shadow: 0px 0px 8px rgba(32, 32, 32, 0.425);
-    border-radius: 3px;
+    /* background-color: #3b3b3b; */
+    
     color: var(--text-color);
 }
 
 .videoCard video{
-    width: 37.5em;
-    border-radius: 3px;
+    box-shadow: 0px 0px 20px rgb(17, 17, 17);
+    width: 37.8em;
+    border-radius: 2px;
 }
 
 .photoLocation{
