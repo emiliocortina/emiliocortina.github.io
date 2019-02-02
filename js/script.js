@@ -6,23 +6,13 @@ var burger_dark = "/resources/logos/burger_grey.svg"
 
 
 class StyleManager {
-
     constructor() {
         this.transparentNav = true;
-        this.logoTop = logo_white;
-        this.logoScrolling = logo_dark;
-        this.burgerTop = burger_white;
-        this.burgerScrolling = burger_dark;
+        this.state = new LightState();
     }
 
-    setDarkMode(){
-        this.logoScrolling = logo_white;
-        this.burgerScrolling = burger_white;
-    }
-
-    setLightMode(){
-        this.logoScrolling = logo_dark;
-        this.burgerScrolling = burger_dark;
+    setState(styleState){
+        this.state = styleState;
     }
 
     setTransparency(transparency) {
@@ -68,22 +58,48 @@ class StyleManager {
             }
         }
         $('nav').removeClass('black');
-        $("#logo-img").attr("src", this.logoTop);
-        $("#burger-button").attr("src", this.burgerTop);
+        $("#logo-img").attr("src", this.state.logoTop);
+        $("#burger-button").attr("src", this.state.burgerTop);
         $(".headerTitle").css('opacity', 1);
         this.scrolling=false;
     }
 
     styleScrolling() {
         $('nav').addClass('black');
-        $("#logo-img").attr("src", this.logoScrolling);
-        $("#burger-button").attr("src", this.burgerScrolling);
+        $("#logo-img").attr("src", this.state.logoScrolling);
+        $("#burger-button").attr("src", this.state.burgerScrolling);
         $(".logo-text").css('opacity', '1');
         $(".headerTitle").css('opacity', 0);
         this.scrolling=true;
     }
 }
 
+class DarkState {
+    constructor() {
+        this.logoTop = logo_white;
+        this.burgerTop = burger_white;
+        this.logoScrolling = logo_white;
+        this.burgerScrolling = burger_white;
+    }
+}
+
+class LightState {
+    constructor() {
+        this.logoTop = logo_white;
+        this.burgerTop = burger_white;
+        this.logoScrolling = logo_dark;
+        this.burgerScrolling = burger_dark;
+    }
+}
+
+class AboutState {
+    constructor() {
+        this.logoTop = logo_dark;
+        this.burgerTop = burger_dark;
+        this.logoScrolling = logo_dark;
+        this.burgerScrolling = burger_dark;
+    }
+}
 
 
 var styleManager = new StyleManager();

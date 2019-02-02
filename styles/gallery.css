@@ -1,5 +1,5 @@
 :root {
-    --main-background-color: rgb(32, 32, 32);
+    --main-background-color: #202020;
     --text-color: white;
     --secondary-text-color: #dbdbdb;
     --color-guay: #0E6D80;
@@ -10,7 +10,7 @@ html {
 }
 
 header {
-    margin: 15vh;
+    margin: 15vh 0;
 }
 
 footer {
@@ -20,7 +20,7 @@ footer {
     margin: 15vh 0 10vh 0;
 }
 
-footer p .year {
+footer p em {
     font-family: Helvetica, Arial, sans-serif;
     font-weight: lighter;
 }
@@ -100,7 +100,6 @@ footer p .year {
 .videoCard {
     margin: 3em 1em;
     /* background-color: #3b3b3b; */
-    
     color: var(--text-color);
 }
 
