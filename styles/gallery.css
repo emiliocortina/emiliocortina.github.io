@@ -13,17 +13,6 @@ header {
     margin: 15vh 0;
 }
 
-footer {
-    text-align: center;
-    font-family: 'Kano';
-    color: var(--text-color);
-    margin: 15vh 0 10vh 0;
-}
-
-footer p em {
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: lighter;
-}
 
 .navbar.black{
     background:  rgb(43, 43, 43);

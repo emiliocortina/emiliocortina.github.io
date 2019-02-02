@@ -111,6 +111,18 @@ body {
     word-spacing: 1em;
 }
 
+footer {
+    text-align: center;
+    font-family: 'Kano';
+    color: var(--text-color);
+    padding: 15vh 0 10vh 0;
+}
+
+footer p em {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: lighter;
+}
+
 
 @media(max-width: 786px) {
     .navbarWrapper {

@@ -151,6 +151,10 @@ h2 {
     height: 25vw;
 }
 
+footer {
+    background-color: rgb(255, 255, 255);
+}
+
 @media(min-width: 1200px) {}
 
 @media(max-width: 786px) {
@@ -180,5 +184,9 @@ h2 {
 
     #card5 {
         height: 150vw;
+    }
+
+    footer {
+        padding: 20vw 0 20vw 0;
     }
 }
