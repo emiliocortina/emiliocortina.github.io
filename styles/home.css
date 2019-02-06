@@ -1,4 +1,4 @@
-html::before {
+/* html::before {
     content: "";
     position: fixed;
     top: 0;
@@ -8,6 +8,10 @@ html::before {
     z-index: -1;
     background-color: #EBE7E6;
     background-size: cover;
+} */
+
+html {
+    background-color: #EBE7E6;
 }
 
 header {
