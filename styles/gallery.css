@@ -10,7 +10,7 @@ html {
 }
 
 header {
-    margin: 15vh 0;
+    margin: 10vh 0;
 }
 
 
@@ -42,7 +42,7 @@ header {
     justify-content: center;
 }
 
-.title{
+h1 {
     font-family: 'CircularStd';
     font-size: 2em;
     text-align: center;
