@@ -24,7 +24,7 @@ header {
     color: #333333;
 }
 
-h1,h2 {
+h1,h2,h3 {
     font-family: 'CircularStd';
 }
 
@@ -37,14 +37,22 @@ h1 {
 
 h2 {
     font-size: 1.6em;
-    color: #ffffff;
-    text-align:  left;
+    margin-top: 0.3em;
+    color: #EBE7E6;
+    text-align:  center;
 }
+
+h3 {
+    margin: 0;
+    text-align:  center;
+}
+
+
 
 .bodyWrapper {
     font-family: 'Kano';
     color: var(--text-color);
-    padding: 2.5em;
+    padding: 1em;
     font-size: 1.2em;
     display: flex;
     flex-direction: column;
@@ -52,20 +60,59 @@ h2 {
 }
 
 .content {
-    background-color: #1B2E39;
-    border-radius: 5px;
+    max-width: 20em;
+    color: #EBE7E6;
+    background-color: #1C2E38;
+    border-radius: 10px;
     padding: 2.5em;
     margin: 0;
-    box-shadow: 0px 0px 8px rgba(75, 75, 75, 0.199);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.26);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #portrait {
-    width: 20em;
+    width: 14em;
+    margin-bottom: -1px;
 }
 
 .description{
     text-align: center;
 }
+
+.contactWrapper {
+    margin-top: 2em;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contact a {
+    text-decoration: none;
+    color: white;
+}
+
+.infoElement {
+    font-family: 'Kano';
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.infoElement img{
+    height: 1.2em;
+    margin: 0 0.5em;
+}
+
+#mailImg, #cvImg {
+    height: 1.4em;
+}
+
 
 footer {
     color: black;
@@ -73,17 +120,17 @@ footer {
 
 
 @media(min-width: 1200px) {
-    .bodyWrapper {
-        padding: 2.5em 15vw;
-    }
 }
 
 @media(max-width: 786px) {
-    #portrait {
-        width: 14em;
+    .content{
+        padding: 2.5em;
     }
 }
 
-@media(max-width: 330px) {
 
+@media(max-width: 14em) {
+    #portrait {
+        width: 80vw;
+    }
 }
