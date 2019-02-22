@@ -20,11 +20,12 @@ header {
 .navbar .menu ul li a {
     text-shadow: none;
 }
+
 .menu ul li a {
     color: #333333;
 }
 
-h1,h2,h3 {
+h1, h2, h3, h4 {
     font-family: 'CircularStd';
 }
 
@@ -37,17 +38,16 @@ h1 {
 
 h2 {
     font-size: 1.6em;
-    margin-top: 0.3em;
-    color: #EBE7E6;
-    text-align:  center;
+    margin: 0.3em;
+    color: #191919;
+    text-align: center;
 }
 
 h3 {
     margin: 0;
-    text-align:  center;
+    text-align: center;
+    color: #383838;
 }
-
-
 
 .bodyWrapper {
     font-family: 'Kano';
@@ -60,29 +60,76 @@ h3 {
 }
 
 .content {
-    max-width: 20em;
-    color: #EBE7E6;
-    background-color: #1C2E38;
-    border-radius: 10px;
-    padding: 2.5em;
+    max-width: 25em;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 16px rgba(28, 46, 56, 0.274);
+    /* padding: 2.5em; */
+    border-radius: 5px;
     margin: 0;
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.26);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#portrait {
-    width: 14em;
-    margin-bottom: -1px;
+.contentHeader {
+    padding: 2.5em;
+    background-color: #1C2E38;
+    color: white;
+    border-radius: 5px 5px 0 0;
 }
 
-.description{
+.contentHeader h2 {
+    color: white;
+}
+
+.contentHeader p {
     text-align: center;
 }
 
+#portrait {
+    width: 14em;
+    margin-bottom: -1px;
+    z-index: -1;
+}
+
+.description {
+    text-align: center;
+}
+
+.technologies {
+    margin-top: 2.5em;
+}
+
+.technologies section{
+    margin: 1em 0;
+}
+
+.techIcons, .langIcons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.techIcon {
+    height: 2em;
+    margin: 1em 0.5em 0.4em;
+}
+
+.langIcon {
+    height: 1.2em;
+    margin: 1em 0.5em 0.4em;
+}
+
+#spring {
+    height: 1.2em;
+}
+
 .contactWrapper {
-    margin-top: 2em;
+    margin-top: 2.5em;
+    padding-bottom: 2.5em;
 }
 
 .contact {
@@ -93,44 +140,55 @@ h3 {
 
 .contact a {
     text-decoration: none;
-    color: white;
+    color: #CCCCCC;
+    margin: 1em;
+}
+
+.contact a:hover {
+    transform: scale(1.1);
 }
 
 .infoElement {
     font-family: 'Kano';
-    margin: 1em;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.infoElement img{
+.infoElement img {
     height: 1.2em;
-    margin: 0 0.5em;
+    margin: 0 0.5em 0.4em;
 }
 
 #mailImg, #cvImg {
     height: 1.4em;
 }
 
-
 footer {
     color: black;
 }
 
-
-@media(min-width: 1200px) {
-}
+@media(min-width: 1200px) {}
 
 @media(max-width: 786px) {
-    .content{
-        padding: 2.5em;
-    }
 }
-
 
 @media(max-width: 14em) {
     #portrait {
         width: 80vw;
+    }
+}
+
+@media(max-width: 390px) {
+    .bodyWrapper {
+        padding: 0;
+    }
+    .contentHeader {
+        border-radius: 0;
+        padding: 1em;
+    }
+
+    .content {
+        border-radius: 0;
     }
 }
