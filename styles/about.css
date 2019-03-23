@@ -87,6 +87,11 @@ h3 {
     text-align: center;
 }
 
+.contentHeader p a {
+    color: white;
+    text-decoration: none;
+}
+
 #portrait {
     width: 14em;
     margin-bottom: -1px;
