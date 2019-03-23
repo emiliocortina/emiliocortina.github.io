@@ -3,12 +3,16 @@
 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 312.6 312.6" style="enable-background:new 0 0 312.6 312.6;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#CCCCCC;}
-	.st1{font-family:'CircularStd-Black';}
-	.st2{font-size:190.8096px;}
-	.st3{fill:#9b4d48;}
+	.st0{enable-background:new    ;}
+	.st1{fill:#1C2E38;}
+	.st2{fill:#75211D;}
+	.st3{font-family:'CircularStd-Black';}
 	.st4{font-size:206.8484px;}
 </style>
-<text transform="matrix(1 0 0 1 11.2618 227.1349)" class="st0 st1 st2">C</text>
-<text transform="matrix(1 0 0 1 151.7758 227.1349)" class="st3 st1 st4">#</text>
+<g class="st0">
+	<path class="st1" d="M1.8,153c0-46.4,35.3-77.9,76.8-77.9c44.7,0,64.4,28.8,69.3,50.2l-31.3,9.9c-2.3-10.3-11.8-27.7-38-27.7
+		c-19.9,0-42.4,14.3-42.4,45.5c0,27.9,20.6,44.1,42.8,44.1c25.8,0,36.1-17.2,39-27.9l31.7,9c-4.8,20.6-24.6,52.1-70.7,52.1
+		C36.2,230.3,1.8,199.4,1.8,153z"/>
+</g>
+<text transform="matrix(1 0 0 1 151.7758 227.1349)" class="st2 st3 st4">#</text>
 </svg>

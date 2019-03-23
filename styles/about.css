@@ -121,6 +121,7 @@ h3 {
 .langIcon {
     height: 1.2em;
     margin: 1em 0.5em 0.4em;
+    box-shadow: 0px 0px 4px rgba(28, 46, 56, 0.274);
 }
 
 #spring {
@@ -140,7 +141,7 @@ h3 {
 
 .contact a {
     text-decoration: none;
-    color: #CCCCCC;
+    color: #1C2E38;
     margin: 1em;
 }
 

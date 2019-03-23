@@ -32,6 +32,9 @@ header {
     color: var(--text-color);
     padding: 2.5em;
     font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .photosWrapper{
@@ -40,6 +43,7 @@ header {
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 45em;
 }
 
 h1 {
@@ -102,12 +106,6 @@ h1 {
     color: var(--secondary-text-color);
 }
 
-
-@media(min-width: 1200px) {
-    .content {
-        padding: 2.5em 15vw;
-    }
-}
 
 @media(max-width: 786px) {
     .videoCard video{
