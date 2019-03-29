@@ -60,7 +60,7 @@ class StyleManager {
         $('nav').removeClass('black');
         $("#logo-img").attr("src", this.state.logoTop);
         $("#burger-button").attr("src", this.state.burgerTop);
-        $(".headerTitle").css('opacity', 1);
+        // $(".headerTitle").css('opacity', 1);
         this.scrolling=false;
     }
 
@@ -69,7 +69,7 @@ class StyleManager {
         $("#logo-img").attr("src", this.state.logoScrolling);
         $("#burger-button").attr("src", this.state.burgerScrolling);
         $(".logo-text").css('opacity', '1');
-        $(".headerTitle").css('opacity', 0);
+        //$(".headerTitle").css('opacity', 0);
         this.scrolling=true;
     }
 }
