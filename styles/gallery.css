@@ -26,6 +26,11 @@ header {
     text-shadow: none;
 }
 
+.logo-text a {
+    text-decoration: none;
+    color: #ffffff;;
+}
+
 .content {
     font-family: 'Kano';
     background-color: var(--main-background-color);
