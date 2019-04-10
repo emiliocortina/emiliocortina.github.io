@@ -83,6 +83,11 @@ body {
     margin-right: 2em;
 }
 
+.logo-text a {
+    text-decoration: none;
+    color:   #333333;
+}
+
 .burger-menu img {
     cursor: pointer;
     height: 2em;
