@@ -8,6 +8,7 @@
     <title>Emilio Cortina</title>
     <link rel="stylesheet" href="/styles/style.css">
     <link rel="stylesheet" href="/styles/work.css">
+    <link rel="stylesheet" href="/styles/simpleLightbox.css">
 
 
     <link rel="apple-touch-icon" sizes="180x180" href="/resources/favicon/apple-touch-icon.png">
@@ -23,6 +24,8 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="/js/script.js"></script>
+    <script src="/js/clamp.js"></script>
+    <script src="/js/simpleLightbox.js"></script>
 </head>
 <body>
     <header>
@@ -74,10 +77,37 @@
 
                     </div>
                 </div>
+                <p class="projectDescription">Project that aims to adapt the Solid platform, for building a
+                    decentralized messaging application
+                    resulting in true data ownership as well as improved privacy.</p>
+                <div class="projectFooter"><a target="_blank" rel="noopener noreferrer"
+                        href="https://github.com/Arquisoft/sole_chat"><img src="/resources/logos/github_black.svg"
+                            alt=""></a><a target="_blank" rel="noopener noreferrer"
+                        href="https://arquisoft.github.io/sole_chat/"><img src="/resources/logos/web.svg" alt=""></a>
+                    <img id="soleGallery" src="/resources/logos/gallery.svg" alt="">
+                </div>
 
+            </div>
 
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis voluptatum, optio provident quod
-                    iusto aspernatur officiis aliquid libero autem obcaecati.</p>
+            <div class="projectCard">
+                <div class="projectLogo" id="wpNodeLogo">
+                    <img src="/resources/logos/projects/myWallapop_node.svg" alt=""></div>
+                <div class="projectHeader">
+                    <h3>MyWallapop 2</h3>
+                    <div class="techIcons">
+                        <img src="/resources/logos/technologies/nodejs_black.svg"
+                            alt="JavaScript programming language icon." class="techIcon" id="node">
+                        <img src="/resources/logos/technologies/html5_black.svg"
+                            alt="JavaScript programming language icon." class="techIcon">
+                    </div>
+                </div>
+                <p class="projectDescription">Nodejs web application based on the previous one (myWallapop 1).
+                    MyWallapop1 is an online market for posting sales and buying sales posted from other users.</p>
+                <div class="projectFooter"><a target="_blank" rel="noopener noreferrer"
+                        href="https://github.com/Arquisoft/sole_chat"><img src="/resources/logos/github_black.svg"
+                            alt=""></a>
+                    <img id="wpGallery" src="/resources/logos/gallery.svg" alt="">
+                </div>
 
             </div>
 
@@ -95,12 +125,16 @@
 
                     </div>
                 </div>
-
-
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis voluptatum, optio provident quod
-                    iusto aspernatur officiis aliquid libero autem obcaecati.</p>
+                <p class="projectDescription">Project proposal for CERN Google Summer of Code. The aim is to contribute
+                    to an existing project (Phoenix Project) on creating an experiment independent data visualization
+                    program in the browser.</p>
+                <div class="projectFooter"><a target="_blank" rel="noopener noreferrer"
+                        href="https://github.com/Arquisoft/sole_chat"><img src="/resources/logos/github_black.svg"
+                            alt=""></a><a target="_blank" rel="noopener noreferrer"
+                        href="https://arquisoft.github.io/sole_chat/"><img src="/resources/logos/web.svg" alt=""></a>
+                        <img id="phoenixGallery" src="/resources/logos/gallery.svg" alt="">
+                </div>
             </div>
-
 
 
             <div class="projectCard">
@@ -119,29 +153,13 @@
                 </div>
 
 
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis voluptatum, optio provident quod
-                    iusto aspernatur officiis aliquid libero autem obcaecati.</p>
-
-            </div>
-
-            <div class="projectCard">
-                <div class="projectLogo" id="wpNodeLogo">
-                    <img src="/resources/logos/projects/myWallapop_node.svg" alt=""></div>
-                <div class="projectHeader">
-                    <h3>MyWallapop 2</h3>
-                    <div class="techIcons">
-                        <img src="/resources/logos/technologies/nodejs_black.svg"
-                            alt="JavaScript programming language icon." class="techIcon" id="node">
-                        <img src="/resources/logos/technologies/html5_black.svg"
-                            alt="JavaScript programming language icon." class="techIcon">
-
-                    </div>
+                <p class="projectDescription">Spring (Springboot) web application that allows users to post sales and
+                    buying sales posted from other users. It also allows users to send messages to sales and more.</p>
+                <div class="projectFooter"><a target="_blank" rel="noopener noreferrer"
+                        href="https://github.com/Arquisoft/sole_chat"><img src="/resources/logos/github_black.svg"
+                            alt=""></a>
+                            <img id="wp2Gallery" src="/resources/logos/gallery.svg" alt="">
                 </div>
-
-
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis voluptatum, optio provident quod
-                    iusto aspernatur officiis aliquid libero autem obcaecati.</p>
-
             </div>
         </div>
 
@@ -151,6 +169,7 @@
         <p>© <em>2019</em> Emilio Cortina Labra</p>
         <p>All rights reserved.</p>
         <script>styleManager.setState(new AboutState());</script>
+        <script src="/js/work.js"></script>
     </footer>
 
 </body>

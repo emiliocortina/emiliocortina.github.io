@@ -62,6 +62,7 @@ body {
     box-shadow: 0px 0px 8px rgba(75, 75, 75, 0.199);
     margin: 1em;
     transition: 0.4s;
+    padding: 0.7em 3em;
 }
 
 .navbar-left {

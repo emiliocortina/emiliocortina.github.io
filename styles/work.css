@@ -64,7 +64,7 @@ h3 {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     max-width: 50em;
 }
 
@@ -91,6 +91,7 @@ h3 {
     background-color: white;
     width: 20em;
     margin: 2em 1em;
+    /* height: 22em; */
 }
 
 .projectLogo {
@@ -122,8 +123,17 @@ h3 {
 }
 
 .projectCard p {
-    margin: 0 1.5em 1.5em;
+    margin: 0 1.5em 1em;
 }
+
+.max-lines {
+    display: block; /* or inline-block */
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: hidden;
+    max-height: 3.6em;
+    line-height: 1.8em;
+  }
 
 .projectHeader {
     display: flex;
@@ -132,6 +142,25 @@ h3 {
     justify-items: space-between;
     margin: 1em 1.5em;
     -webkit-justify-content: space-between;
+}
+
+.projectFooter{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-items: flex-start;
+    margin: 0 1.5em 1.5em;
+}
+
+.projectFooter img {
+    height: 1.2em;
+    width: 1.2em;
+    margin-right: 1em;
+    cursor: pointer;
+}
+
+.projectFooter img:hover {
+    opacity: 0.6;
 }
 
 footer {
