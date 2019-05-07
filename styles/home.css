@@ -11,7 +11,7 @@
 } */
 
 html {
-    background-color: #EBE7E6;
+    background-color: white;
 }
 
 header {
@@ -105,11 +105,11 @@ h2 {
 
 
 #card1 {
-    background-color: #1ba4b9;
+    background-color: #35acbe;
 }
 
 #card2 {
-    background-color: #F8F8F8;
+    background-color: rgb(255, 255, 255);
     align-items: flex-end;
 }
 
@@ -136,7 +136,7 @@ h2 {
 }
 
 #card5 {
-    background-color: #D3D1CD;
+    background-color: rgb(255, 255, 255);
     height: 75vw;
 }
 
@@ -147,7 +147,7 @@ h2 {
 }
 
 #card7 {
-    background-color: #F8F8F8;
+    background-color: rgb(255, 255, 255);
 }
 
 #card8 {
