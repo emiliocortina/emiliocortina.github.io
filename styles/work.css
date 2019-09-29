@@ -109,19 +109,19 @@ h3 {
 }
 
 #wpNodeLogo {
-    background-color: rgb(132, 202, 100);
+    background-color: rgb(98, 197, 116);
 }
 
 #phoenixLogo {
-    background-image: radial-gradient(circle, #28b6e9, #0098e1, #0078d6, #0056c4, #1330a9);
+    background-image: radial-gradient(circle, #43A3CC, #4491B3);
 }
 
 #soleLogo {
-    background-color: rgb(255, 205, 57);
+    background-color: #ffd148;
 }
 
 #wpLogo {
-    background-color: rgb(231, 83, 90);
+    background-color: #E06075;
 }
 
 .projectCard p {
@@ -136,6 +136,11 @@ h3 {
     overflow: hidden;
     max-height: 3.6em;
     line-height: 1.8em;
+}
+
+.projectDescription a {
+    text-decoration: none;
+    color: var(--text-color);
 }
 
 .projectHeader {
