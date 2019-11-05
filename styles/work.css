@@ -108,8 +108,8 @@ h3 {
     max-height: 6em;
 }
 
-#wpNodeLogo {
-    background-color: rgb(98, 197, 116);
+#wesoLogo {
+    background-color: #75d687;
 }
 
 #phoenixLogo {
@@ -125,7 +125,7 @@ h3 {
 }
 
 .projectCard p {
-    margin: 0 1.5em 1em;
+    margin: 0 1.5em 0.5em;
 }
 
 .max-lines {
@@ -150,6 +150,12 @@ h3 {
     justify-items: space-between;
     margin: 1em 1.5em;
     -webkit-justify-content: space-between;
+}
+
+.readMore {
+    margin: 0 1.5em 1em 1.5em;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .projectFooter {

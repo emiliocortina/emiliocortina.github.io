@@ -1,7 +1,20 @@
+function collapse(element, lines) {
+    var hola = element.currentTarget.previousElementSibling
+    $clamp(hola, { clamp: lines, useNativeClamp: true });
+}
+
 $('.projectDescription').each(function(index, element) {
     $clamp(element, { clamp: 5, useNativeClamp: true });
 });
 
+// Read more
+$('.readMore').click(function(target) {
+    collapse(target, 15);
+});
+
+
+
+// Galleries
 $('#soleGallery').click(function() {
     SimpleLightbox.open({
         items: ['/resources/projects/sole/sole1.png', '/resources/projects/sole/sole2.png', '/resources/projects/sole/sole3.png', '/resources/projects/sole/sole4.png']
