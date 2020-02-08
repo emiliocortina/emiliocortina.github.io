@@ -13,15 +13,21 @@ header {
     margin: 10vh 0;
 }
 
+.navbar.black {
+    background-color: var(--main-background-color);
+    box-shadow: 0px 0px 8px rgb(26, 26, 26);
+}
 
-.navbar.black{
-    background:  rgb(43, 43, 43);
-    color: #ffffff;
+.navbar.black .burger-menu {
+    background-color:  var(--main-background-color);
+    color: var(--text-color);
     border: none;
     box-shadow: 0px 0px 8px rgb(26, 26, 26);
 }
 
-.navbar.black .menu ul li a {
+
+
+.navbar .menu ul li a {
     color: #ffffff;
     text-shadow: none;
 }
@@ -102,7 +108,6 @@ h1 {
 }
 
 .videoCard video{
-    box-shadow: 0px 0px 20px rgb(17, 17, 17);
     width: 37.8em;
     border-radius: 2px;
 }
@@ -118,6 +123,10 @@ h1 {
 }
 
 @media(max-width: 786px) {
+    .navbar.black {
+        background: none;
+        box-shadow: none;
+    }
     .videoCard video{
         width: 80vw;
     }

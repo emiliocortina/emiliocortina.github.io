@@ -1,14 +1,3 @@
-/* html::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    height: 100vh;
-    left: 0;
-    right: 0;
-    z-index: -1;
-    background-color: #EBE7E6;
-    background-size: cover;
-} */
 
 html {
     background-color: white;
