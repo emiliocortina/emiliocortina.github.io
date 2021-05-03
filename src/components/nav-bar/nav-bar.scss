@@ -1,0 +1,224 @@
+.fade-enter-active,
+.fade-leave-active {
+    transition: all 0.3s cubic-bezier(.02, .01, .47, 1);
+}
+
+.close-overlay-enter-active,
+.close-overlay-leave-active {
+    transition: all 0.3s ease; 
+}
+
+.close-overlay-enter-from,
+.faclose-overlayde-leave-to {
+    opacity: 0;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
+    transform: translateY(-100px) scale(0.6);
+}
+
+.close-menu-overlay {
+    position: fixed;
+    width: 100wh;
+    height: 100wh;
+    background-color: rgba(0, 0, 0, 0.171);
+    z-index: 9;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+// NAVBAR STYLES
+.navbarWrapper {
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar {
+    color: var(--text-color);
+    border-radius: 40px;
+    padding: 1em 3em;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.4s;
+    &.black {
+        background: var(--nav-bar-background);
+        color: var(--text-color);
+        box-shadow: 0px 8px 16px rgba(75, 75, 75, 0.199);
+        margin: 1em;
+        transition: 0.4s;
+        padding: 0.4em 1.4em;
+    }
+}
+
+// NAVBAR LEFT: LOGO, LOGO TEXT (TITLE) AND BURGER MENU (TOGGLE)
+.navbar-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    .logo {
+        display: flex;
+        #logo-img {
+            width: 2.5em;
+            height: 2.5em;
+            padding: 0.7em;
+        }
+    }
+    .logo-text {
+        font-family: "Kano", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: bold;
+        font-size: 1.5em;
+        margin-right: 2em;
+        a {
+            color: var(--text-color);
+            text-decoration: none;
+        }
+    }
+    .burger-menu {
+        display: none;
+        img {
+            cursor: pointer;
+            height: 2.4rem;
+            width: 2.4rem;
+            padding: 0.8rem;
+        }
+    }
+}
+
+.menu {
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        li {
+            margin: 0 2em;
+            a {
+                color: var(--text-color);
+                text-shadow: none;
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 1.2em;
+                font-family: "Kano", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                text-transform: lowercase;
+            }
+            &:first-child {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 786px) {
+    .navbarWrapper {
+        display: unset;
+    }
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0.8em 2.7em;
+        margin-top: 1em;
+        .menu ul li:first-child {
+            display: block;
+        }
+        &.black {
+            background: none;
+            box-shadow: none;
+            .burger-menu {
+                background-color: var(--main-background-color);
+                box-shadow: 0px 8px 16px rgba(75, 75, 75, 0.199);
+                border-radius: 999px;
+                img {
+                    height: 2.6em;
+                    width: 2.6em;
+                }
+            }
+            .menu {
+                width: 100%;
+                background-color: var(--main-background-color);
+                border-radius: 40px;
+                box-shadow: 0px 8px 16px rgba(75, 75, 75, 0.199);
+                margin-top: 1em;
+            }
+        }
+        .burger-menu {
+            display: flex;
+        }
+    }
+    .navbar-left {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        .logo-text,
+        .logo,
+        #logo-img {
+            display: none;
+        }
+    }
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        padding: 0;
+        li {
+            margin: 2em 0em;
+        }
+    }
+}
+
+@media (max-width: 460px) {
+    .logo-text {
+        display: none;
+    }
+}
+
+@media (max-width: 390px) {
+    #logo-img {
+        height: 2.5em;
+        min-height: 2em;
+    }
+    .logo {
+        width: 1.5em;
+    }
+    .logo-text {
+        display: none;
+    }
+    .headerTitle {
+        padding: 10vh 5vw 0 5vw;
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 330px) {
+    .logo {
+        width: 1.7em;
+    }
+    .navbar.black .burger-menu img {
+        height: 2.2rem;
+        width: 2.2rem;
+    }
+}
+
+@media (max-height: 500px) {
+    .menu ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        padding: 0;
+    }
+}
