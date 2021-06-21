@@ -1,11 +1,11 @@
 import { EmiWebAppsLocale } from "./locale";
 
-export class ENLocale implements EmiWebAppsLocale {
-  navBar = { navBarTitle: "Emilio Cortina" };
-  routeNames = {
+export const ENLocale: EmiWebAppsLocale = {
+  navBar: { navBarTitle: "Emilio Cortina" },
+  routeNames: {
     home: "Home",
     gallery: "Gallery",
-    work: "Projects",
+    work: "Work",
     about: "About",
-  };
-}
+  },
+};

@@ -3,12 +3,9 @@ import { ENLocale } from "./locales/en";
 import { ESLocale } from "./locales/es";
 
 const messages = {
-  es: {
-    ...new ESLocale(),
-  },
-  en: {
-    ...new ENLocale(),
-  },
+  es: ESLocale,
+  en: ENLocale,
+  "en-US": ENLocale,
 };
 
 // Create i18n instance with options

@@ -1,19 +1,18 @@
 import "../mock/matchMedia.mock";
+import "../mock/i18n.mock";
+import "../mock/router.mock";
 import { mount } from "@vue/test-utils";
 import NavBar from "@/components/nav-bar/nav-bar";
-// import { ESLocale } from "@/locales/es";
 
 describe("nav-bar.vue", () => {
-  it("renders props.msg when passed", () => {
-    // const locale = new ESLocale();
-    const wrapper = mount(NavBar, {
-      global: {
-        mocks: {
-          $t: (msg: string) => msg,
-        },
-      },
-    });
-    console.log(wrapper);
-    expect(wrapper.text()).toMatch("");
+  it("Renders title", () => {
+    const wrapper = mount(NavBar);
+    expect(wrapper.text()).toContain("Emilio Cortina");
+  });
+
+  it("Renders links", () => {
+    const wrapper = mount(NavBar);
+    const links = ["Home", "Gallery", "Work", "About"];
+    links.forEach((link: string) => expect(wrapper.text()).toContain(link));
   });
 });

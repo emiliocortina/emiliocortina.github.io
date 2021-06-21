@@ -1,4 +1,4 @@
-export interface EmiWebAppsLocale {
+export type EmiWebAppsLocale = {
   navBar: { navBarTitle: string };
   routeNames: {
     home: string;
@@ -6,4 +6,4 @@ export interface EmiWebAppsLocale {
     work: string;
     about: string;
   };
-}
+};
