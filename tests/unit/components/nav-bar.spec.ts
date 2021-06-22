@@ -3,6 +3,7 @@ import "../mock/i18n.mock";
 import "../mock/router.mock";
 import { mount } from "@vue/test-utils";
 import NavBar from "@/components/nav-bar/nav-bar";
+import { i18n } from "@/i18n";
 
 describe("nav-bar.vue", () => {
   it("Renders title", () => {
@@ -10,9 +11,17 @@ describe("nav-bar.vue", () => {
     expect(wrapper.text()).toContain("Emilio Cortina");
   });
 
-  it("Renders links", () => {
+  it("[EN] Renders links", () => {
+    i18n.global.locale = "en";
     const wrapper = mount(NavBar);
     const links = ["Home", "Gallery", "Work", "About"];
+    links.forEach((link: string) => expect(wrapper.text()).toContain(link));
+  });
+
+  it("[ES] Renders links", () => {
+    i18n.global.locale = "es";
+    const wrapper = mount(NavBar);
+    const links = ["Inicio", "Galeria", "Proyectos", "Info"];
     links.forEach((link: string) => expect(wrapper.text()).toContain(link));
   });
 });

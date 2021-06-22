@@ -5,7 +5,7 @@ export const ESLocale: EmiWebAppsLocale = {
   routeNames: {
     home: "Inicio",
     gallery: "Galeria",
-    work: "proyectos",
+    work: "Proyectos",
     about: "Info",
   },
 };
