@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-    <LanguageToggle />
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ex
       officiis laboriosam? Magnam, temporibus labore similique maxime nostrum
@@ -265,13 +264,7 @@
 </template>
 
 <script lang="ts">
-import LanguageToggle from "@/components/language-toggle/language-toggle.vue";
-import { Options, Vue } from "vue-class-component";
+import { Vue } from "vue-class-component";
 
-@Options({
-  components: {
-    LanguageToggle,
-  },
-})
 export default class Home extends Vue {}
 </script>

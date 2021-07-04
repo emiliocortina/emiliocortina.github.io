@@ -1,14 +1,21 @@
 <template>
-  <div class="locale-changer">
-    <select v-model="$i18n.locale">
-      <option
-        v-for="locale in $i18n.availableLocales"
-        :key="`locale-${locale}`"
-        :value="locale"
-      >
-        {{ locale }}
-      </option>
-    </select>
+  <div class="localeChanger">
+    <div
+      id="es"
+      :class="['localeButton', { active: activeLang === SPANISH_LANG }]"
+      @click="changeLang(SPANISH_LANG)"
+    >
+      ES
+    </div>
+    <div class="separator">|</div>
+    <div
+      id="en"
+      class="localeButton"
+      :class="['localeButton', { active: activeLang === ENGLISH_LANG }]"
+      @click="changeLang(ENGLISH_LANG)"
+    >
+      EN
+    </div>
   </div>
 </template>
 <script lang="ts" src="./language-toggle.ts"></script>

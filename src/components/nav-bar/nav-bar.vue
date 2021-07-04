@@ -23,6 +23,9 @@
                   $t("routeNames." + route)
                 }}</router-link>
               </li>
+              <li>
+                <LanguageToggle />
+              </li>
             </ul>
           </div>
         </transition>

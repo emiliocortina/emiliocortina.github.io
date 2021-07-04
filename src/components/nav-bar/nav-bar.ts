@@ -1,6 +1,12 @@
 import { LOGO_IMAGE, NAV_ROUTES } from "@/constants";
-import { Vue } from "vue-class-component";
+import LanguageToggle from "@/components/language-toggle/language-toggle.vue";
+import { Options, Vue } from "vue-class-component";
 
+@Options({
+  components: {
+    LanguageToggle,
+  },
+})
 export default class NavBar extends Vue {
   logoImage = LOGO_IMAGE;
   navRoutes = NAV_ROUTES;
