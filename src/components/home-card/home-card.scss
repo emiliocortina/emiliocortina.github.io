@@ -1,0 +1,25 @@
+.home-card {
+    width: 100%;
+    background-color: rgb(223, 151, 151);
+    // flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    font-family: "CircularStd";
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.2em;
+
+    &.text {
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+
+    &.image {
+        width: 100%;
+        height: 100%;
+        background: none;
+    }
+}
